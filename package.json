@@ -1,0 +1,54 @@
+{
+  "name": "next-file-loader",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Webpack file loader that simplifies the import of video, audio, and other assets in Next.js applications.",
+  "homepage": "https://github.com/idootop/next-file-loader",
+  "bugs": "https://github.com/idootop/next-file-loader/issues",
+  "repository": "idootop/next-file-loader",
+  "license": "MIT",
+  "author": {
+    "name": "Del Wang",
+    "email": "hello@xbox.work",
+    "url": "https://github.com/idootop"
+  },
+  "keywords": [
+    "nextjs",
+    "webpack",
+    "file-loader",
+    "video-loader",
+    "audio-loader"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "next": ">=10"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "sideEffects": false
+}
